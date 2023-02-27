@@ -68,7 +68,7 @@ services:
       DSPACE_REST_NAMESPACE: /server
     image: dspace/dspace-angular:dspace-7.5
     networks:
-      dspacenet:
+      - traefik
     ports:
     - published: 4000
       target: 4000
